@@ -1,12 +1,12 @@
 <script>
 Array.prototype.unique = function(){
-   var result = [];
-   this.forEach(function(v){
-       if(result.indexOf(v) < 0){
-           result.push(v);
-       }
-   });
-   return result;
+    var result = [];
+    this.forEach(function(v){
+        if(result.indexOf(v) < 0){
+            result.push(v);
+        }
+    });
+    return result;
 }
 
 var arr = [1,5,3,5,2,3,9.9,"abc","def","abc"];

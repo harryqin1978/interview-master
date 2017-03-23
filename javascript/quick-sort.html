@@ -1,0 +1,16 @@
+<script>
+// 二分查找法
+function quickSort(arr) {
+    if(arr.length <= 1) return arr;
+    var index = Math.floor(arr.length/2);
+    var key = arr.splice(index,1)[0];
+    var left = [],right = [];
+    arr.forEach(function(v){
+        v <= key ? left.push(v) : right.push(v);
+    });
+    return quickSort(left).concat([key],quickSort(right));
+}
+
+var arr = [1,5,3,5,2,3,9.9,15,80,33];
+console.log(quickSort(arr));
+</script>

@@ -12,6 +12,7 @@
 
 ## JavaScript
 * [数组去重的实现](javascript/unique.html)
+* [快速排序](javascript/quick-sort.html)
 
 ## MySQL
 
