@@ -9,6 +9,7 @@
 ## PHP
 * [遍及文件夹下文件](php/list-dir.php)
 * [正则表达式大全](php/regex.md)
+  * [单例模式](php/singleton.php)
 
 ## JavaScript
 * [数组去重的实现](javascript/unique.html)
