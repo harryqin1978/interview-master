@@ -11,6 +11,7 @@
 * [正则表达式大全](php/regex.md)
 
 ## JavaScript
+* [数组去重的实现](javascript/unique.html)
 
 ## MySQL
 
