@@ -8,6 +8,7 @@
 
 ## PHP
 * [遍及文件夹下文件](php/list-dir.php)
+* [正则表达式大全](php/regex.md)
 
 ## JavaScript
 
