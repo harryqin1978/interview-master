@@ -1,0 +1,18 @@
+<script>
+function bubbleSort(arr) {
+    for (var i = 0; i < arr.length - 1; i++) {//比较的次数是length-1
+        for (var j = 0; j < arr.length - 1 - i; j++) {
+            if (arr[j] > arr[j + 1]) {
+                var tmp = arr[j];
+                arr[j] = arr[j + 1];
+                arr[j + 1] = tmp;
+            }
+        }
+    }
+
+    return arr;
+}
+
+var arr = [1,5,3,5,2,3,9.9,15,80,33];
+console.log(bubbleSort(arr));
+</script>
