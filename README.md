@@ -11,6 +11,7 @@
 * [正则表达式大全](php/regex.md)
 * 设计模式
   * [单例模式](php/singleton.php)
+  * [工厂模式](php/factory.php)
 
 ## JavaScript
 * [数组去重的实现](javascript/unique.html)
