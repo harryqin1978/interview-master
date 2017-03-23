@@ -1,0 +1,32 @@
+<html>
+    <head>
+        <title>Closure</title>
+        <script>
+            var name = 'The Window';
+
+            var object = {
+                name : 'My Object',
+
+                // 返回The Window
+                getNameFunc : function() {
+                    return function() {
+                        return this.name;
+                    }
+                }
+
+                // 返回My Object
+                getNameFunc : function() {
+                    var that = this;
+                    return function() {
+                        return that.name;
+                    }
+                }
+            }
+
+            var f = object.getNameFunc();
+            console.log(f());
+        </script>
+    </head>
+    <body>
+    </body>
+</html>

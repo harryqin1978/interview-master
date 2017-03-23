@@ -15,6 +15,8 @@
 * [快速排序](javascript/quick-sort.html)
 * [冒泡排序](javascript/bubble-sort.html)
 * [DOM生成以及事件实例](javascript/dom-event.html)
+* [闭包实例](javascript/closure.html)
+* [闭包内this的用法](javascript/closure-this.html)
 
 ## MySQL
 
