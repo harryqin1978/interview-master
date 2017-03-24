@@ -24,6 +24,7 @@
 * [闭包内this的用法](javascript/closure-this.html)
 
 ## MySQL
+* [ACID](mysql/acid.md)
 
 ## Network
 * [OSI七层协议](network/osi7.md)
