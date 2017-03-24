@@ -87,6 +87,10 @@ class OperationFactory {
         }
     }
 }
+
+/**
+ * 测试结果
+ */
 $test = OperationFactory::createObj('/');
 $result = $test->getValue(23, 0);
 echo $result;
