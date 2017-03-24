@@ -8,10 +8,12 @@
 
 ## PHP
 * [遍及文件夹下文件](php/list-dir.php)
+* [PDO MySQL调用](php/pdo-mysql.php)
 * [正则表达式大全](php/regex.md)
 * 设计模式
   * [单例模式](php/singleton.php)
   * [工厂模式](php/factory.php)
+  * [工厂模式实际应用](php/factory-adv.php)
 
 ## JavaScript
 * [数组去重的实现](javascript/unique.html)
