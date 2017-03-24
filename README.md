@@ -17,6 +17,7 @@
 
 ## JavaScript
 * [数组去重的实现](javascript/unique.html)
+* [数组操作汇总](javascript/array.html)
 * [快速排序](javascript/quick-sort.html)
 * [冒泡排序](javascript/bubble-sort.html)
 * [DOM生成以及事件实例](javascript/dom-event.html)
