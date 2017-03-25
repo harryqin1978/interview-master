@@ -8,7 +8,7 @@ var person = {
         console.log(this.name);
     }
 }
-person.sayName();
+person.sayName(); // David
 
 /* 类和对象 */
 function Person(name, age, job) {
@@ -21,6 +21,21 @@ function Person(name, age, job) {
 }
 var person1 = new Person("Nicholas", 29, "Software Engineer");
 var person2 = new Person("Greg", 27, "Doctor");
-person1.sayName();
-console.log(person2.age);
+person1.sayName(); // Nicholas
+console.log(person2.age); // 27
+
+/* 原型模式 */
+function NewPerson() {
+}
+NewPerson.prototype = {
+    constructor: Person,
+    name : "Nicholas",
+    age : 29,
+    job : "Software Engineer",
+    sayName : function () {
+        console.log(this.name);
+    }
+};
+var newPerson = new NewPerson();
+newPerson.sayName(); // Nicholas
 </script>
