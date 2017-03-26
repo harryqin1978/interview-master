@@ -16,6 +16,7 @@
   * [工厂模式实际应用](php/factory-adv.php)
 * [中文字符串翻转](php/reverse.php)
 * [MVC的理解](php/mvc.md)
+* [依赖注入的理解](php/di.md)
 
 ## JavaScript
 * [数组去重的实现](javascript/unique.html)
