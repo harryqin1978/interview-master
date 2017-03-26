@@ -38,4 +38,20 @@ NewPerson.prototype = {
 };
 var newPerson = new NewPerson();
 newPerson.sayName(); // Nicholas
+
+/* 私有变量和函数 */
+function MyObject() {
+    var privateVariable = 10;
+
+    function privateFunction() {
+        return privateVariable;
+    }
+
+    this.publicMethod = function() {
+        privateVariable ++;
+        return privateFunction();
+    }
+}
+var myObject = new MyObject();
+console.log(myObject.publicMethod()); // 11
 </script>
