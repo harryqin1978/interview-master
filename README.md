@@ -32,6 +32,7 @@
 * [ACID](mysql/acid.md)
 * [四种隔离级别](mysql/isolate.md)
 * [innodb和myisam的区别](mysql/innodb-myisam.md)
+* [数据库优化方法](mysql/optimize.md)
 
 ## Network
 * [OSI七层协议](network/osi7.md)
