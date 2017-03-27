@@ -29,6 +29,7 @@
 * [正则表达式操作汇总](javascript/regex.html)
 * [类和对象](javascript/object.html)
 * [弹出窗口屏蔽检测](javascript/block-exam.html)
+* [AJAX实例](javascript/ajax.html)
 
 ## MySQL
 * [ACID](mysql/acid.md)

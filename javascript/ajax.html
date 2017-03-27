@@ -1,0 +1,48 @@
+<script>
+function showJson() {
+    var test;
+    if(window.XMLHttpRequest){
+        test = new XMLHttpRequest();
+    }else if(window.ActiveXObject){
+        test = new window.ActiveXObject();
+    }else{
+        alert("请升级至最新版本的浏览器");
+    }
+    if(test != null){
+        test.open("GET", "source.json", true);
+        test.send(null);
+        test.onreadystatechange = function() {
+            if(test.readyState == 4 && test.status == 200){
+                var obj = JSON.parse(test.responseText);
+                for (var key in obj) {
+                    console.log(key + " => " + obj[key]);
+                }
+            }
+        };
+    }
+}
+
+window.onload = function() {
+    showJson();
+};
+</script>
+
+<!--
+1、使用AJAX，我们必须new一个XMLHttpRequest()的实例，在IE低版本浏览器中是ActiveXObject()。使用if语句判断即可。
+2、通过判断readyState的交互状态以及status的交互状态来触发onreadystatechange事件。
+这里展开介绍一下readyState的4种取值情况：
+（1）值为0：请求还没有初始化，意思是还没有开始open();
+（2）值为1：请求已经初始化了但是还没有发送，意思是还没有send()；
+（3）值为2：请求已经发送了，后台正在处理。
+（4）值为3：请求还在处理，但是部分数据可以用了，具体什么意思我现在也不是很明白。
+（5）值为4：后台服务器相应完毕，也就是你现在随时可以取得请求的数据。
+但是当readyState==4时我们只能知道服务器响应完毕，但还不知道服务器有没有找到我们请求的那个文件，这时就要引用status了。
+这里展开介绍一下status的几种常见取值情况：
+（1）200：找到了请求的文件。
+（2）404：找不到请求的文件。
+（3）500：服务器出错。
+在同时满足了readySate==4以及status==200时我们就可以得到我们想要的value了。
+3、服务器返回的值是存在responseText对象里面的。这时我们可以使用JSON.parse()来取得里面的数据。
+4、我们现在把JSON文件里的一整块数据都取了出来，但如果想取到其中的某一个块值比如说：value，就必须用到遍历，比如说for循环。这里的for循环我使用了另一种形式for(var name in obj)，这里的意思是取得对象的值，存放在变量name里面。因为JSON文件的结构就是由很多对象组成的。
+5、如果是使用“GET”，则send()里面的值为null。如果是POST,则需要传具体的参数比如:send(name);
+-->
