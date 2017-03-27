@@ -3,6 +3,7 @@
 ## Table of Contents
 - [PHP](#php)
 - [JavaScript](#javascript)
+- [JQuery](#jquery)
 - [MySQL](#mysql)
 - [Network](#network)
 
@@ -30,6 +31,9 @@
 * [类和对象](javascript/object.html)
 * [弹出窗口屏蔽检测](javascript/block-exam.html)
 * [AJAX实例](javascript/ajax.html)
+
+## JQuery
+* [AJAX实例](jquery/ajax.html)
 
 ## MySQL
 * [ACID](mysql/acid.md)
