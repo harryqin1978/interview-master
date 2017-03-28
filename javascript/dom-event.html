@@ -19,7 +19,7 @@
                 // for (var i=0, l = liNodes.length; i < l; i++) {
                 //    liNodes[i].onclick = function() {
                 //        console.log(this.getAttribute('id'));
-                //    }
+                //    };
                 // }
 
                 // 与上面效果相同，但只需绑定1个ul事件。
@@ -27,11 +27,22 @@
                     if (e.target && e.target.nodeName.toUpperCase() == "LI") {
                         console.log(e.target.getAttribute('id'));
                     }
-                }
+                };
+
+                console.log(ulList.nodeType == Node.ELEMENT_NODE); // true
+                console.log(ulList.childNodes.length); // 100
+                console.log(ulList.firstChild.nextSibling.getAttribute('id')); // item-2
+                console.log(ulList.parentNode.nodeName); // BODY
+                console.log(ulList.nextSibling.nextSibling); // <div>End</div>
+                // 为什么要两个nextSibling，因为中间有空格及换行字符被认为是一个Text元素。
             }
         </script>
     </head>
     <body>
         <ul id='list'></ul>
+        <div>End</div>
+        <script>
+            document.write('<p><strong>' + (new Date()).toString() + '</strong></p>');
+        </script>
     </body>
 </html>
