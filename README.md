@@ -41,7 +41,9 @@
 * [四种隔离级别](mysql/isolate.md)
 * [innodb和myisam的区别](mysql/innodb-myisam.md)
 * [数据库优化方法](mysql/optimize.md)
+* [索引、事务等等。。。](mysql/chaos.md)
 
 ## Network
 * [OSI七层协议](network/osi7.md)
 * [网站速度优化方法](network/website-optimize.md)
+* [网络常见攻击方式](network/attack.md)
