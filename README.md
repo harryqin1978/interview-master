@@ -6,6 +6,7 @@
 - [JQuery](#jquery)
 - [MySQL](#mysql)
 - [Network](#network)
+- [Design Pattern](#design-pattern)
 
 ## PHP
 * [遍及文件夹下文件](php/list-dir.php)
@@ -18,7 +19,8 @@
 * [中文字符串翻转](php/reverse.php)
 * [MVC的理解](php/mvc.md)
 * [依赖注入的理解](php/di.md)
-* [某厂实战题](php/penguin.php)
+* [引用返回](php/reference-return.php)
+* [Sample 1](php/penguin.php)
 
 ## JavaScript
 * [数组去重的实现](javascript/unique.html)
@@ -48,3 +50,6 @@
 * [OSI七层协议](network/osi7.md)
 * [网站速度优化方法](network/website-optimize.md)
 * [网络常见攻击方式](network/attack.md)
+
+## Design Pattern
+* [面向对象](design-pattern/oop.md)
