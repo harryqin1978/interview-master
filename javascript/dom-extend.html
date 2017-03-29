@@ -14,6 +14,13 @@
             console.log(document.querySelector('#myDiv').firstElementChild.getAttribute("src")); // ie9+
             console.log(document.querySelector('#myDiv').firstElementChild.nextElementSibling.getAttribute("src")); // ie9+
             console.log(document.getElementsByClassName('button')); // ie9+
+            document.getElementById('myDiv').classList.add("hello"); // ie10+
+            console.log(document.getElementById('myDiv').classList);
+
+            var button = document.getElementById('myButton');
+            button.focus();
+            console.log(document.activeElement == button);
+            console.log(document.hasFocus());
         };
     </script>
 </head>
@@ -26,5 +33,6 @@
         </div>
     </div>
     <img class="button" src="https://ss0.bdstatic.com/5aV1bjqh_Q23odCf/static/superman/img/logo/logo_white_fe6da1ec.png" />
+    <button id="myButton">Click me!</button>
 </body>
 </html>
