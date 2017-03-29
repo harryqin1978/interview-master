@@ -32,6 +32,7 @@
 * [类和对象](javascript/object.html)
 * [弹出窗口屏蔽检测](javascript/block-exam.html)
 * [AJAX实例](javascript/ajax.html)
+* [DOM扩展](javascript/dom-extend.html)
 
 ## JQuery
 * [AJAX实例](jquery/ajax.html)
