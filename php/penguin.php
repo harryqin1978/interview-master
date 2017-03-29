@@ -20,3 +20,14 @@ $arr = [1,2,3,4,5];
 echo array_shift($arr); // 1，队列先进先出。
 echo array_pop($arr); // 5，堆栈后进先出。
 
+function add(&$d) {
+    $d ++;
+    return $d;
+}
+$a = 13;
+$b = add($a);
+echo $a; // 14, 引用参数。
+echo $b; // 14, $a的复制。
+add($b);
+echo $a; // 14, 值不变，$a不是对象，所以$b是$a的复制，而不是引用。
+echo $b; // 15, $b值加1。

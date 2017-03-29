@@ -19,7 +19,7 @@
 * [中文字符串翻转](php/reverse.php)
 * [MVC的理解](php/mvc.md)
 * [依赖注入的理解](php/di.md)
-* [某厂实战题](php/penguin.php)
+* [Sample 1](php/penguin.php)
 
 ## JavaScript
 * [数组去重的实现](javascript/unique.html)
