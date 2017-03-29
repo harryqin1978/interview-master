@@ -19,7 +19,7 @@
 * [中文字符串翻转](php/reverse.php)
 * [MVC的理解](php/mvc.md)
 * [依赖注入的理解](php/di.md)
-* [引用返回](php/reference-return.md)
+* [引用返回](php/reference-return.php)
 * [Sample 1](php/penguin.php)
 
 ## JavaScript
