@@ -16,5 +16,7 @@ $b = $a;
 $b->z = 0;
 echo $a->z; // 0，$a和$b指向同一个对象。
 
-
+$arr = [1,2,3,4,5];
+echo array_shift($arr); // 1，队列先进先出。
+echo array_pop($arr); // 5，堆栈后进先出。
 
