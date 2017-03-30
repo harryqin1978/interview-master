@@ -10,12 +10,20 @@
             console.log(document.querySelectorAll('img.button')); // ie8+
             console.log(document.querySelectorAll('#myDiv img.button'));
             console.log(document.querySelectorAll('#myDiv > img.button'));
+
             console.log(document.querySelector('#myDiv').childElementCount); // ie9+
+            console.log(document.querySelector('#myDiv').childNodes);
+            console.log(document.querySelector('#myDiv').children);
             console.log(document.querySelector('#myDiv').firstElementChild.getAttribute("src")); // ie9+
             console.log(document.querySelector('#myDiv').firstElementChild.nextElementSibling.getAttribute("src")); // ie9+
+
             console.log(document.getElementsByClassName('button')); // ie9+
             document.getElementById('myDiv').classList.add("hello"); // ie10+
             console.log(document.getElementById('myDiv').classList);
+
+            console.log(document.querySelector('#myDiv').dataset.author); // ie10+
+
+            document.querySelector('#myDiv').insertAdjacentHTML("afterbegin", "<p>Hello world!</p>");
 
             var button = document.getElementById('myButton');
             button.focus();
@@ -25,7 +33,7 @@
     </script>
 </head>
 <body>
-    <div id="myDiv" class="container">
+    <div id="myDiv" class="container" data-author="QH">
         <img class="button" src="http://bbs.neotv.cn/template/neotv/img/bbs_logo.jpg" />
         <img class="button" src="http://avatar.csdn.net/B/E/C/1_arty321766.jpg" />
         <div id="myDiv1">
