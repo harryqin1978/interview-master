@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <script>
+        window.onload = function() {
+            console.log(document.implementation.hasFeature("CSS", "2.0")); // true，CSS2.0能力检测。
+
+            document.getElementById('myButton').onclick = function() {
+                document.getElementById('myDiv').style.color = "red";
+                console.log(document.getElementById('myDiv').style.color); // red，只能得到内嵌css属性。
+                console.log(document.getElementById('myDiv').style.width); // 空值，无法得到外链css属性。
+                console.log(window.getComputedStyle(document.getElementById('myDiv')).width); // 500px，可以得到外链css属性。
+            }
+        };
+    </script>
+    <style>
+        body {
+            background-image: url(http://www.yymoban.com/uploads/allimg/140109/1-1401091Q503G6.jpg);
+            background-position: center center;
+        }
+        #myDiv {
+            width: 500px;
+            margin: 0 auto;
+            color: #099;
+            background-color: #550;
+        }
+    </style>
+</head>
+<body>
+    <div id="myDiv">
+        <h1>Hello!</h1>
+        <p>
+            Using High School and Beyond dataset we wish to account for variability in the writing test scores using information on reading, math and the program type the student is in. The categorical variable prog has three levels:
+            <ul>
+                <li>general program</li>
+                <li>academic program</li>
+                <li>vocational program.</li>
+            </ul>
+            First, we will load the dataset from the Internet, then we will create dummy variables for prog using the tabulate command.
+        </p>
+        <button id="myButton">Click me!</button>
+    </div>
+</body>
+</html>

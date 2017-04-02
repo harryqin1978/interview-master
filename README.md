@@ -35,6 +35,7 @@
 * [弹出窗口屏蔽检测](javascript/block-exam.html)
 * [AJAX实例](javascript/ajax.html)
 * [DOM扩展](javascript/dom-extend.html)
+* [DOM2扩展](javascript/dom-2.html)
 
 ## JQuery
 * [AJAX实例](jquery/ajax.html)
