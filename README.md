@@ -21,6 +21,8 @@
 * [依赖注入的理解](php/di.md)
 * [引用返回](php/reference-return.php)
 * [Sample 1](php/penguin.php)
+* [自动加载实现](php/autoload.php)
+* [session实例](php/session-example.php)
 
 ## JavaScript
 * [数组去重的实现](javascript/unique.html)
