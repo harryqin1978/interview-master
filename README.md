@@ -23,6 +23,7 @@
 * [Sample 1](php/penguin.php)
 * [自动加载实现](php/autoload.php)
 * [session实例](php/session-example.php)
+* [无限分类](php/unlimit-category.php)
 
 ## JavaScript
 * [数组去重的实现](javascript/unique.html)
